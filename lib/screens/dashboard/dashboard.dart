@@ -3,6 +3,7 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter_connection_poc/screens/connectivity/connectivity.dart';
 import 'package:flutter_connection_poc/screens/location/location.dart';
 import 'package:flutter_connection_poc/screens/location_requirer/requirer.dart';
+import 'package:flutter_connection_poc/screens/specs/specs.dart';
 import 'package:geolocator/geolocator.dart';
 
 enum TabItem { Location, Connectivity, Specs }
@@ -52,6 +53,7 @@ class _DashboardState extends State<Dashboard> {
         return ConnectivityAnalyser(); 
         break;
       case TabItem.Specs:
+        return Specs();
         break;
     }
 
